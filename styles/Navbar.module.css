@@ -1,0 +1,66 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  font-size: 1.8rem;
+  padding: 2rem 10rem 2rem 6rem;
+}
+
+@media (max-width: 49em) {
+  .nav {
+    padding: 7rem 5rem;
+  }
+}
+
+.nav .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav .navLinks a {
+  text-decoration: none;
+  color: #6f6f6f;
+  padding-left: 6rem;
+  line-height: 22.97px;
+}
+
+.nav .navLinks a .music:hover {
+  stroke: #98FB4A;
+}
+
+.nav .navLinks a:hover {
+  color: var(--green-color);
+}
+
+@media (max-width: 49em) {
+  .nav .navLinks {
+    display: none;
+  }
+}
+
+.nav .toggler {
+  display: none;
+}
+
+@media (max-width: 49em) {
+  .nav .toggler {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=navbar.module.css.map */

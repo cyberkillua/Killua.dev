@@ -1,0 +1,82 @@
+.container {
+  margin-top: 10rem;
+  width: 100%;
+  padding: 0 12rem 0 12rem;
+}
+
+@media (max-width: 49em) {
+  .container {
+    padding: 0 6rem 0 6rem;
+  }
+}
+
+.container .subhead {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.container .border {
+  width: 100%;
+  height: 0;
+  margin-bottom: 5rem;
+  border: 0.5px solid #393939;
+}
+
+.container .projects .oneProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 4rem;
+}
+
+.container .projects .oneProject .number {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+.container .projects .oneProject .about .name {
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9rem;
+  line-height: 10.6rem;
+}
+
+.container .projects .oneProject .about .text {
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: #d9d9d9;
+  margin: 1rem 0 3rem 0;
+}
+
+.container .projects .oneProject .about .roles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  color: #d9d9d9;
+  font-size: 1.4rem;
+}
+
+.container .projects .oneProject .about .roles a {
+  text-decoration: none;
+  color: var(--green-color);
+}
+
+.container .projects .oneProject .about .roles .green {
+  color: var(--green-color);
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=Project.module.css.map */

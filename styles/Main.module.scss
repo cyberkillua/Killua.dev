@@ -1,0 +1,91 @@
+@import "mixins";
+.main {
+  padding: 1rem 12rem 2rem 12rem;
+  @include small-screen {
+    padding: 1rem 6rem 1rem 6rem;
+  }
+  .bigText {
+    text-align: center;
+    font-family: "Italiana";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18rem;
+    @include small-screen {
+      font-size: 9rem;
+    }
+  }
+
+  .aboutMe {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: end;
+    font-size: 2rem;
+    line-height: 26px;
+    @include small-screen {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left {
+      width: 40%;
+      @include small-screen {
+        width: 100%;
+      }
+      p {
+        margin-bottom: 3rem;
+        @include small-screen {
+          margin-bottom: 1rem;
+        }
+      }
+      .contact {
+        @include small-screen {
+          display: none;
+        }
+      }
+    }
+    .scroll {
+      margin-top: 5rem;
+      @include small-screen {
+        display: none;
+        margin-top: 1rem;
+      }
+      .scrollIcon {
+      }
+    }
+    .right {
+      width: 40%;
+
+      @include small-screen {
+        width: 100%;
+      }
+      p {
+        font-weight: 300;
+        line-height: 168.6%;
+        color: #d9d9d9;
+        margin-top: 10rem;
+        @include small-screen {
+          margin-top: 5rem;
+        }
+      }
+      .contact2 {
+        display: none;
+        @include small-screen {
+          margin-top: 2rem;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.green {
+  color: var(--green-color);
+}
+.link {
+  padding: 1.5rem;
+  @include small-screen {
+    padding: 1rem;
+  }
+}

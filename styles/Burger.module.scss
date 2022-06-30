@@ -1,0 +1,27 @@
+.container {
+  background-color: #0f1000;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 7rem 5rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      color: var(--primary-text-color);
+      padding-top: 15rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "mixins";
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  font-size: 1.8rem;
+  padding: 2rem 10rem 2rem 6rem;
+  @include small-screen {
+    padding: 7rem 5rem;
+  }
+
+  .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      color: #6f6f6f;
+      padding-left: 6rem;
+      line-height: 22.97px;
+      .music:hover {
+        stroke: #98FB4A;
+      }
+    }
+    a:hover {
+      color: var(--green-color);
+    }
+    @include small-screen {
+      display: none;
+    }
+  }
+  .toggler {
+    display: none;
+    @include small-screen {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
