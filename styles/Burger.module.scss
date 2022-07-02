@@ -6,6 +6,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 900;
   .top {
     display: flex;
     justify-content: space-between;

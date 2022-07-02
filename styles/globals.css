@@ -10,15 +10,13 @@
 *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--primary-color);
   background-image: url("../public/BackgroundWeb.svg");
 }
-
 @media (max-width: 49em) {
   body {
     background-image: url("../public/mobile-background.svg");
@@ -38,16 +36,13 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-
 @media (max-width: 64em) {
   html {
     font-size: 50%;
   }
 }
-
 @media (max-width: 49em) {
   html {
     font-size: 40%;
   }
-}
-/*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=globals.css.map */
