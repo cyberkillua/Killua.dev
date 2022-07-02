@@ -2,10 +2,12 @@ import styles from "../styles/Project.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import plus from "../public/plus.svg";
+import minus from "../public/minus.svg";
 import { useState } from "react";
 
 const Project = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(0);
+
   const data = [
     {
       number: "01",
@@ -47,42 +49,63 @@ const Project = () => {
           return (
             <>
               <div className={styles.oneProject} key={item.number}>
-                <div className={styles.number}>{item.number}</div>
-                <div className={styles.about}>
-                  <div className={styles.name}>{item.name}</div>
-                  {open && (
-                    <>
-                      <p className={styles.text}>{item.about}</p>
-                      <div className={styles.roles}>
-                        <p>
-                          Role:&nbsp; &nbsp;{" "}
-                          <span className={styles.green}>{item.role}</span>{" "}
-                        </p>
-                        <p>
-                          Link: &nbsp; &nbsp;
-                          <span className={styles.green}>
-                            <Link href={item.placeholderLink} replace>
-                              <a target="_blank" rel="noopener noreferrer">
-                                {item.link}
-                              </a>
-                            </Link>
-                          </span>
-                        </p>
-                        <p>
-                          Date:&nbsp; &nbsp;{" "}
-                          <span className={styles.green}>{item.date}</span>{" "}
-                        </p>
-                      </div>
-                    </>
-                  )}
+                <div className={styles.left}>
+                  <div className={styles.number}>{item.number}</div>
+                  <div className={styles.about}>
+                    <div className={styles.name}>{item.name}</div>
+                    {open === item.number ? (
+                      <>
+                        <p className={styles.text}>{item.about}</p>
+                        <div className={styles.roles}>
+                          <p>
+                            Role:&nbsp; &nbsp;{" "}
+                            <span className={styles.green}>{item.role}</span>{" "}
+                          </p>
+                          <p>
+                            Link: &nbsp; &nbsp;
+                            <span className={styles.green}>
+                              <Link href={item.placeholderLink} replace>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  {item.link}
+                                </a>
+                              </Link>
+                            </span>
+                          </p>
+                          <p>
+                            Date:&nbsp; &nbsp;{" "}
+                            <span className={styles.green}>{item.date}</span>{" "}
+                          </p>
+                        </div>
+                      </>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
-                <div
-                  onClick={() => {
-                    setOpen(!open);
-                  }}
-                >
-                  <Image src={plus} alt="Plus" className={styles.plus} />
-                </div>
+                {!(open === item.number) ? (
+                  <div
+                    className={styles.plus}
+                    onClick={() => {
+                      setOpen(item.number);
+                    }}
+                  >
+                    <Image src={plus} alt="Plus" />
+                  </div>
+                ) : (
+                  ""
+                )}
+                {open === item.number ? (
+                  <div
+                    className={styles.plus}
+                    onClick={() => {
+                      setOpen(0);
+                    }}
+                  >
+                    <Image src={minus} alt="Minus" />
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
               <div className={styles.border}></div>
             </>

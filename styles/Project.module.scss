@@ -22,14 +22,22 @@
     border: 0.5px solid #393939;
   }
   .projects {
+    .left {
+      display: flex;
+    }
     .oneProject {
       display: flex;
       align-items: start;
+      justify-content: space-between;
       margin-bottom: 4rem;
       .number {
         font-size: 3rem;
         margin-right: 1.5rem;
         margin-top: 1rem;
+        @include small-screen {
+          font-size: 2rem;
+          margin-top: 2.5rem;
+        }
       }
       .about {
         .name {
@@ -38,12 +46,18 @@
           font-weight: 400;
           font-size: 9rem;
           line-height: 10.6rem;
+          @include small-screen {
+            font-size: 5rem;
+          }
         }
         .text {
           font-size: 1.8rem;
           line-height: 30px;
           color: #d9d9d9;
           margin: 1rem 0 3rem 0;
+          @include small-screen {
+            line-height: 25px;
+          }
         }
         .roles {
           display: flex;
@@ -52,6 +66,10 @@
           width: 70%;
           color: #d9d9d9;
           font-size: 1.4rem;
+          @include small-screen {
+            width: 100%;
+            font-size: 1rem;
+          }
           a {
             text-decoration: none;
             color: var(--green-color);
@@ -61,9 +79,19 @@
             margin-right: 2rem;
             font-size: 2rem;
             // line-height: 30px;
+            @include small-screen {
+              font-size: 1.5rem;
+            }
           }
         }
       }
     }
   }
+}
+
+.plus {
+  cursor: pointer;
+  padding-top: 3rem;
+  width: 7rem;
+  height: 7rem;
 }

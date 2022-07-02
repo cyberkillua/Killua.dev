@@ -23,6 +23,12 @@
   border: 0.5px solid #393939;
 }
 
+.container .projects .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container .projects .oneProject {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +36,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 4rem;
 }
 
@@ -37,6 +46,13 @@
   font-size: 3rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 49em) {
+  .container .projects .oneProject .number {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .container .projects .oneProject .about .name {
@@ -47,11 +63,23 @@
   line-height: 10.6rem;
 }
 
+@media (max-width: 49em) {
+  .container .projects .oneProject .about .name {
+    font-size: 5rem;
+  }
+}
+
 .container .projects .oneProject .about .text {
   font-size: 1.8rem;
   line-height: 30px;
   color: #d9d9d9;
   margin: 1rem 0 3rem 0;
+}
+
+@media (max-width: 49em) {
+  .container .projects .oneProject .about .text {
+    line-height: 25px;
+  }
 }
 
 .container .projects .oneProject .about .roles {
@@ -69,6 +97,13 @@
   font-size: 1.4rem;
 }
 
+@media (max-width: 49em) {
+  .container .projects .oneProject .about .roles {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
 .container .projects .oneProject .about .roles a {
   text-decoration: none;
   color: var(--green-color);
@@ -78,5 +113,18 @@
   color: var(--green-color);
   margin-right: 2rem;
   font-size: 2rem;
+}
+
+@media (max-width: 49em) {
+  .container .projects .oneProject .about .roles .green {
+    font-size: 1.5rem;
+  }
+}
+
+.plus {
+  cursor: pointer;
+  padding-top: 3rem;
+  width: 7rem;
+  height: 7rem;
 }
 /*# sourceMappingURL=Project.module.css.map */
