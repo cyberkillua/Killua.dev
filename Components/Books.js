@@ -1,8 +1,8 @@
 import styles from "../styles/Books.module.css";
 import Image from "next/image";
-import mad from "../public/mad.svg";
-import atomic from "../public/atomic.svg";
-import iamz from "../public/iamz.svg";
+import mad from "../public/mad.png";
+import atomic from "../public/atomic.png";
+import iamz from "../public/iamz.png";
 import podcast from "../public/Podcast.svg";
 import btn from "../public/btn.svg";
 const Books = () => {
