@@ -39,24 +39,26 @@
   align-items: center;
 }
 .container .bookContain .book div {
-  margin-right: 1rem;
+  margin-right: 3rem;
   display: block;
-  width: 32rem;
-  height: 47rem;
+  width: 25rem;
 }
 @media (max-width: 49em) {
   .container .bookContain .book div {
     margin-right: 1rem;
-    width: 15rem;
-    height: 20rem;
+    width: 100px;
   }
 }
 .container .bookContain .pod {
-  margin-left: 5rem;
+  margin-left: 3rem;
+  width: 6rem;
+  display: block;
 }
 @media (max-width: 49em) {
   .container .bookContain .pod {
     margin-left: 0;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
 .container .contact {
