@@ -44,6 +44,8 @@
 @media (max-width: 49em) {
   .container .bookContain .book div {
     margin-right: 1rem;
+    width: 100px;
+    height: 150px;
   }
 }
 .container .bookContain .pod {

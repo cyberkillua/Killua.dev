@@ -37,6 +37,8 @@
         margin-right: 4rem;
         @include small-screen {
           margin-right: 1rem;
+          width: 100px;
+          height: 150px;
         }
       }
     }
