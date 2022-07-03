@@ -4,7 +4,7 @@
 }
 @media (max-width: 49em) {
   .container {
-    padding: 0 6rem 0 6rem;
+    padding: 0 4rem 0 4rem;
   }
 }
 .container h1 {
@@ -40,6 +40,11 @@
 }
 .container .bookContain .book div {
   margin-right: 4rem;
+}
+@media (max-width: 49em) {
+  .container .bookContain .book div {
+    margin-right: 1rem;
+  }
 }
 .container .bookContain .pod {
   margin-left: 5rem;
