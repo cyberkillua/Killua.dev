@@ -30,6 +30,8 @@ body {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 html {
