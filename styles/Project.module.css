@@ -79,7 +79,7 @@
 @media (max-width: 49em) {
   .container .projects .oneProject .about .roles {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .container .projects .oneProject .about .roles a {
@@ -92,7 +92,7 @@
 }
 @media (max-width: 49em) {
   .container .projects .oneProject .about .roles .green {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
