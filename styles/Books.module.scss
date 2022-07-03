@@ -1,0 +1,59 @@
+@import "mixins";
+
+.container {
+  margin: 5rem 0rem;
+  padding: 0 0rem 0 12rem;
+  @include small-screen {
+    padding: 0 6rem 0 6rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 35px;
+    font-style: normal;
+    font-weight: 400;
+    // width: 90%;
+    @include small-screen {
+      font-size: 2rem;
+      line-height: 30px;
+      width: 100%;
+    }
+  }
+  .bookContain {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-screen {
+      flex-direction: column;
+      align-items: center;
+      //   margin: 0;
+    }
+    .book {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        margin-right: 4rem;
+      }
+    }
+    .pod {
+      margin-left: 5rem;
+      @include small-screen {
+        margin-left: 0;
+      }
+    }
+  }
+  .contact {
+    margin: 10rem 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 136.1%;
+    button {
+        margin-top: 3rem;
+        background-color: black;
+        border: none;
+    }
+  }
+}

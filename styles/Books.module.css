@@ -1,0 +1,63 @@
+.container {
+  margin: 5rem 0rem;
+  padding: 0 0rem 0 12rem;
+}
+@media (max-width: 49em) {
+  .container {
+    padding: 0 6rem 0 6rem;
+  }
+}
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 49em) {
+  .container h1 {
+    font-size: 2rem;
+    line-height: 30px;
+    width: 100%;
+  }
+}
+.container .bookContain {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 49em) {
+  .container .bookContain {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .bookContain .book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .bookContain .book div {
+  margin-right: 4rem;
+}
+.container .bookContain .pod {
+  margin-left: 5rem;
+}
+@media (max-width: 49em) {
+  .container .bookContain .pod {
+    margin-left: 0;
+  }
+}
+.container .contact {
+  margin: 10rem 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 136.1%;
+}
+.container .contact button {
+  margin-top: 3rem;
+  background-color: black;
+  border: none;
+}/*# sourceMappingURL=Books.module.css.map */

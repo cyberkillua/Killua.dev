@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Books from "../Components/Books";
 import MainSection from "../Components/MainSection";
 import Navbar from "../Components/Navbar";
 import Project from "../Components/Project";
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
         <MainSection />
         <Project />
+        <Books />
       </main>
     </div>
   );
