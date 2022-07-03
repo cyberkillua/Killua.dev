@@ -21,6 +21,7 @@
 }
 .container .projects .left {
   display: flex;
+  width: 90%;
 }
 .container .projects .oneProject {
   display: flex;
@@ -87,7 +88,7 @@
 }
 @media (max-width: 49em) {
   .container .projects .oneProject .about .roles .green {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -96,4 +97,10 @@
   padding-top: 3rem;
   width: 7rem;
   height: 7rem;
+}
+@media (max-width: 49em) {
+  .plus {
+    width: 3rem;
+    height: 3rem;
+  }
 }/*# sourceMappingURL=Project.module.css.map */

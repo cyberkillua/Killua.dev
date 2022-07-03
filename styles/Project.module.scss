@@ -24,6 +24,7 @@
   .projects {
     .left {
       display: flex;
+      width: 90%;
     }
     .oneProject {
       display: flex;
@@ -80,7 +81,7 @@
             font-size: 2rem;
             // line-height: 30px;
             @include small-screen {
-              font-size: 1rem;
+              font-size: 1.5rem;
             }
           }
         }
@@ -94,4 +95,8 @@
   padding-top: 3rem;
   width: 7rem;
   height: 7rem;
+  @include small-screen {
+    width: 3rem;
+    height: 3rem;
+  }
 }

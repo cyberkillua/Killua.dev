@@ -23,7 +23,7 @@
   line-height: 22.97px;
 }
 .nav .navLinks a .music:hover {
-  stroke: #98FB4A;
+  stroke: #98fb4a;
 }
 .nav .navLinks a:hover {
   color: var(--green-color);
