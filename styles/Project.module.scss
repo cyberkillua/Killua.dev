@@ -25,6 +25,7 @@
     .left {
       display: flex;
       width: 95%;
+      align-items: stretch;
     }
     .oneProject {
       display: flex;
@@ -37,19 +38,23 @@
       .number {
         font-size: 3rem;
         margin-right: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         @include small-screen {
           font-size: 2rem;
-          margin-top: 2.5rem;
+          // margin-top: 2.5rem;
         }
       }
       .about {
+        margin-left: 0rem;
         .name {
           font-family: "Italiana";
           font-style: normal;
           font-weight: 400;
           font-size: 9rem;
-          line-height: 10.6rem;
+          display: flex;
+          align-items: start;
+
+          // line-height: 10.6rem;
           @include small-screen {
             font-size: 5rem;
           }

@@ -22,6 +22,7 @@
 .container .projects .left {
   display: flex;
   width: 95%;
+  align-items: stretch;
 }
 .container .projects .oneProject {
   display: flex;
@@ -37,20 +38,23 @@
 .container .projects .oneProject .number {
   font-size: 3rem;
   margin-right: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 @media (max-width: 49em) {
   .container .projects .oneProject .number {
     font-size: 2rem;
-    margin-top: 2.5rem;
   }
+}
+.container .projects .oneProject .about {
+  margin-left: 0rem;
 }
 .container .projects .oneProject .about .name {
   font-family: "Italiana";
   font-style: normal;
   font-weight: 400;
   font-size: 9rem;
-  line-height: 10.6rem;
+  display: flex;
+  align-items: start;
 }
 @media (max-width: 49em) {
   .container .projects .oneProject .about .name {

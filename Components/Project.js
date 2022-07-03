@@ -52,7 +52,7 @@ const Project = () => {
                 <div className={styles.left}>
                   <div className={styles.number}>{item.number}</div>
                   <div className={styles.about}>
-                    <div className={styles.name}>{item.name}</div>
+                    <p className={styles.name}>{item.name}</p>
                     {open === item.number ? (
                       <>
                         <p className={styles.text}>{item.about}</p>
