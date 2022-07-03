@@ -24,13 +24,16 @@
   .projects {
     .left {
       display: flex;
-      width: 90%;
+      width: 95%;
     }
     .oneProject {
       display: flex;
       align-items: start;
       justify-content: space-between;
       margin-bottom: 4rem;
+      @include small-screen {
+        justify-content: center;
+      }
       .number {
         font-size: 3rem;
         margin-right: 1.5rem;

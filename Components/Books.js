@@ -12,13 +12,31 @@ const Books = () => {
       <div className={styles.bookContain}>
         <div className={styles.book}>
           <div>
-            <Image src={iamz} alt="iamz" />
+            <Image
+              src={iamz}
+              alt="iamz"
+              width={303}
+              height={453}
+              layout={"responsive"}
+            />
           </div>
           <div>
-            <Image src={atomic} alt="atomic" />
+            <Image
+              src={atomic}
+              alt="atomic"
+              width={303}
+              height={453}
+              layout={"responsive"}
+            />
           </div>
           <div>
-            <Image src={mad} alt="mad" />
+            <Image
+              src={mad}
+              alt="mad"
+              width={303}
+              height={453}
+              layout={"responsive"}
+            />
           </div>
         </div>
         <div className={styles.pod}>

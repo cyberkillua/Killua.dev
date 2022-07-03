@@ -21,13 +21,18 @@
 }
 .container .projects .left {
   display: flex;
-  width: 90%;
+  width: 95%;
 }
 .container .projects .oneProject {
   display: flex;
   align-items: start;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+@media (max-width: 49em) {
+  .container .projects .oneProject {
+    justify-content: center;
+  }
 }
 .container .projects .oneProject .number {
   font-size: 3rem;

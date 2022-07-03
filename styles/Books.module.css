@@ -39,13 +39,16 @@
   align-items: center;
 }
 .container .bookContain .book div {
-  margin-right: 4rem;
+  margin-right: 1rem;
+  display: block;
+  width: 32rem;
+  height: 47rem;
 }
 @media (max-width: 49em) {
   .container .bookContain .book div {
     margin-right: 1rem;
-    width: 100px;
-    height: 150px;
+    width: 15rem;
+    height: 20rem;
   }
 }
 .container .bookContain .pod {
