@@ -37,6 +37,7 @@ body {
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @media (max-width: 64em) {
   html {

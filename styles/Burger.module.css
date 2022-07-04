@@ -10,7 +10,7 @@
   top: 0;
   right: 0;
   z-index: 900;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .container .top {
   display: flex;

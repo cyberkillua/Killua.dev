@@ -30,7 +30,7 @@ const Books = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact">
         <p>Have an idea or a project?</p>
         <div>
           <Link href="mailto:moshood988@gmail.com">

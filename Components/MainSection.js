@@ -35,7 +35,7 @@ const MainSection = () => {
       });
   }, []);
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="home">
       <div className={styles.textContainer}>
         <h1 id="bigText" className={styles.bigText}></h1>
       </div>
@@ -66,7 +66,7 @@ const MainSection = () => {
         <div className={styles.scroll}>
           <Image src={Scroll} alt="Scroll Down" className={styles.scrollIcon} />
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} id="project">
           <p>
             I’m a software Engineer with experience in working with both
             front-end and back-end Java script frameworks and libraries for

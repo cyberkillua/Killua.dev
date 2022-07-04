@@ -41,7 +41,7 @@ const Project = () => {
     },
   ];
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <div className={styles.subhead}>Projects</div>
       <div className={styles.border}></div>
       <div className={styles.projects}>
