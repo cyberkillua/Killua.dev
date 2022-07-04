@@ -3,10 +3,43 @@ import Image from "next/image";
 import Link from "../public/linkedin.svg";
 import Github from "../public/github.svg";
 import Scroll from "../public/scroll.svg";
+
+import { useEffect } from "react";
+
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
+
+gsap.registerPlugin(TextPlugin);
+
 const MainSection = () => {
+  useEffect(() => {
+    gsap
+      .timeline({
+        // yoyo: true,
+        repeat: -1,
+      })
+      .to("h1", {
+        text: "Back-end.",
+        duration: 3,
+        ease: "none",
+        yoyo: true,
+        repeat: 1,
+      })
+      .to("h1", {
+        delay: 0.1,
+        text: "Front-end.",
+        duration: 3,
+        ease: "none",
+        repeat: 1,
+        yoyo: true,
+      });
+  }, []);
   return (
     <div className={styles.main}>
-      <h1 className={styles.bigText}>Front-end.</h1>
+      <div className={styles.textContainer}>
+        <h1 id="bigtext" className={styles.bigText}></h1>
+      </div>
+
       <div className={styles.aboutMe}>
         <div className={styles.left}>
           <p>

@@ -24,6 +24,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
             rel="stylesheet"
           />
+          
         </Head>
         <body>
           <Main />

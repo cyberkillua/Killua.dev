@@ -6,6 +6,14 @@
     padding: 1rem 4rem 1rem 4rem;
   }
 }
+.main .textContainer {
+  height: 25rem;
+}
+@media (max-width: 49em) {
+  .main .textContainer {
+    height: 10rem;
+  }
+}
 .main .bigText {
   text-align: center;
   font-family: "Italiana";
@@ -15,7 +23,7 @@
 }
 @media (max-width: 49em) {
   .main .bigText {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 }
 .main .aboutMe {

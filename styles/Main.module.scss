@@ -4,6 +4,12 @@
   @include small-screen {
     padding: 1rem 4rem 1rem 4rem;
   }
+  .textContainer{
+    height: 25rem;
+    @include small-screen {
+      height: 10rem;
+    }
+  }
   .bigText {
     text-align: center;
     font-family: "Italiana";
@@ -11,7 +17,7 @@
     font-weight: 400;
     font-size: 18rem;
     @include small-screen {
-      font-size: 9rem;
+      font-size: 6rem;
     }
   }
 
