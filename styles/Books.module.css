@@ -53,6 +53,7 @@
   margin-left: 3rem;
   width: 6rem;
   display: block;
+  cursor: "pointer";
 }
 @media (max-width: 49em) {
   .container .bookContain .pod {
@@ -72,4 +73,5 @@
   margin-top: 3rem;
   background-color: black;
   border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=Books.module.css.map */

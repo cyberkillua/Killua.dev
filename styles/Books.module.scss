@@ -49,6 +49,7 @@
       margin-left: 3rem;
       width: 6rem;
       display: block;
+      cursor: 'pointer';
       // height: 6rem;
       @include small-screen {
         margin-left: 0;
@@ -67,6 +68,7 @@
       margin-top: 3rem;
       background-color: black;
       border: none;
+      cursor: pointer;
     }
   }
 }

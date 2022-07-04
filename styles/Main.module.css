@@ -11,7 +11,7 @@
 }
 @media (max-width: 49em) {
   .main .textContainer {
-    height: 10rem;
+    height: 7rem;
   }
 }
 .main .bigText {
@@ -23,7 +23,7 @@
 }
 @media (max-width: 49em) {
   .main .bigText {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .main .aboutMe {

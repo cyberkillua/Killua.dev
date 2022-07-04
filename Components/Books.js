@@ -5,6 +5,7 @@ import atomic from "../public/atomic.png";
 import iamz from "../public/iamz.png";
 import podcast from "../public/Podcast.svg";
 import btn from "../public/btn.svg";
+import Link from "next/link";
 const Books = () => {
   return (
     <div className={styles.container}>
@@ -22,15 +23,23 @@ const Books = () => {
           </div>
         </div>
         <div className={styles.pod}>
-          <Image src={podcast} alt="podcast" layout={"responsive"} />
+          <Link href="https://open.spotify.com/playlist/2czEtqvbLN6vv9KSx9TkZO?si=78dda07fcfb54f76">
+            <a target="_blank" rel="noopener noreferrer">
+              <Image src={podcast} alt="podcast" layout={"responsive"} />
+            </a>
+          </Link>
         </div>
       </div>
       <div className={styles.contact}>
         <p>Have an idea or a project?</p>
         <div>
-          <button>
-            <Image src={btn} alt="btn" />
-          </button>
+          <Link href="mailto:moshood988@gmail.com">
+            <a target="_blank" rel="noopener noreferrer">
+              <button>
+                <Image src={btn} alt="btn" />
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     </div>

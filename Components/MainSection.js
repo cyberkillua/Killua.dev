@@ -1,8 +1,9 @@
 import styles from "../styles/Main.module.css";
 import Image from "next/image";
-import Link from "../public/linkedin.svg";
+import Linkedin from "../public/linkedin.svg";
 import Github from "../public/github.svg";
 import Scroll from "../public/scroll.svg";
+import Link from "next/link";
 
 import { useEffect } from "react";
 
@@ -15,17 +16,16 @@ const MainSection = () => {
   useEffect(() => {
     gsap
       .timeline({
-        // yoyo: true,
         repeat: -1,
       })
-      .to("h1", {
+      .to("#bigText", {
         text: "Back-end.",
         duration: 3,
         ease: "none",
         yoyo: true,
         repeat: 1,
       })
-      .to("h1", {
+      .to("#bigText", {
         delay: 0.1,
         text: "Front-end.",
         duration: 3,
@@ -37,7 +37,7 @@ const MainSection = () => {
   return (
     <div className={styles.main}>
       <div className={styles.textContainer}>
-        <h1 id="bigtext" className={styles.bigText}></h1>
+        <h1 id="bigText" className={styles.bigText}></h1>
       </div>
 
       <div className={styles.aboutMe}>
@@ -48,9 +48,19 @@ const MainSection = () => {
             build things for the web.
           </p>
           <div className={styles.contact}>
-            <Image src={Github} alt="Github" className={styles.link} />
+            <Link href="https://github.com/cyberkillua">
+              <a target="_blank" rel="noopener noreferrer">
+                {" "}
+                <Image src={Github} alt="Github" className={styles.link} />{" "}
+              </a>
+            </Link>
+
             <span className={styles.link}></span>
-            <Image src={Link} alt="Linkedin" className={styles.link} />
+            <Link href="https://www.linkedin.com/in/moshood-alimi-413869199/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image src={Linkedin} alt="Linkedin" className={styles.link} />
+              </a>
+            </Link>
           </div>
         </div>
         <div className={styles.scroll}>
@@ -64,9 +74,19 @@ const MainSection = () => {
             development cycles.
           </p>
           <div className={styles.contact2}>
-            <Image src={Github} alt="Github" className={styles.link} />
+            <Link href="https://github.com/cyberkillua">
+              <a target="_blank" rel="noopener noreferrer">
+                {" "}
+                <Image src={Github} alt="Github" className={styles.link} />{" "}
+              </a>
+            </Link>
+
             <span className={styles.link}></span>
-            <Image src={Link} alt="Linkedin" className={styles.link} />
+            <Link href="https://www.linkedin.com/in/moshood-alimi-413869199/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Image src={Linkedin} alt="Linkedin" className={styles.link} />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

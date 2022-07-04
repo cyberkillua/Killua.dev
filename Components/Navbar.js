@@ -17,7 +17,11 @@ const Navbar = () => {
         <div className={styles.navLinks}>
           <a href="#">Projects</a>
           <a href="#">Contact</a>
-          <a href="#">
+          <a
+            href="https://open.spotify.com/playlist/44cFKRRHkPrggaKRdFyoOr?si=5c4a31250c944ce8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image src={Music} alt="Music" className={styles.music} />
           </a>
         </div>
