@@ -29,7 +29,7 @@
     }
     .oneProject {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 4rem;
       @include small-screen {
@@ -38,10 +38,8 @@
       .number {
         font-size: 3rem;
         margin-right: 1.5rem;
-        // margin-top: 2rem;
         @include small-screen {
           font-size: 2rem;
-          // margin-top: 2.5rem;
         }
       }
       .about {
@@ -54,7 +52,6 @@
           display: flex;
           align-items: start;
 
-          // line-height: 10.6rem;
           @include small-screen {
             font-size: 5rem;
           }
@@ -101,6 +98,9 @@
   cursor: pointer;
   width: 7rem;
   height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include small-screen {
     width: 3rem;
     height: 3rem;

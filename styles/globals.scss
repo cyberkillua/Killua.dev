@@ -20,6 +20,7 @@ body {
 
   @include small-screen {
     background-image: url("../public/mobile-background.svg");
+    background-size: cover;
   }
 }
 body {

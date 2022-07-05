@@ -26,7 +26,7 @@
 }
 .container .projects .oneProject {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
@@ -103,6 +103,9 @@
   cursor: pointer;
   width: 7rem;
   height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 49em) {
   .plus {
