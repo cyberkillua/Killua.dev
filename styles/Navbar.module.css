@@ -8,7 +8,7 @@
 }
 @media (max-width: 49em) {
   .nav {
-    padding: 10rem 5rem 7rem 5rem;
+    padding: 1rem 3rem;
     position: -webkit-sticky;
     position: sticky;
     z-index: 500;
