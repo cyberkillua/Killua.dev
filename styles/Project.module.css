@@ -5,7 +5,8 @@
 }
 @media (max-width: 49em) {
   .container {
-    padding: 0 4rem 0 4rem;
+    padding: 0 5rem 0 5rem;
+    scroll-margin-top: 25rem;
   }
 }
 .container .subhead {

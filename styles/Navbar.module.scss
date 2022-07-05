@@ -8,12 +8,13 @@
   padding: 2rem 10rem 2rem 6rem;
 
   @include small-screen {
-    padding: 7rem 3rem;
+    padding: 10rem 5rem 7rem 5rem;
     position: sticky;
     z-index: 500;
     top: 0;
     overflow: hidden;
     background-color: black;
+    height: 10vh;
   }
 
   .navLinks {
@@ -26,6 +27,7 @@
       color: #6f6f6f;
       padding-left: 6rem;
       line-height: 22.97px;
+     
       .music:hover {
         stroke: #98fb4a;
       }

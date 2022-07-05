@@ -8,13 +8,14 @@
 }
 @media (max-width: 49em) {
   .nav {
-    padding: 7rem 3rem;
+    padding: 10rem 5rem 7rem 5rem;
     position: -webkit-sticky;
     position: sticky;
     z-index: 500;
     top: 0;
     overflow: hidden;
     background-color: black;
+    height: 10vh;
   }
 }
 .nav .navLinks {

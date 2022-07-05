@@ -66,7 +66,7 @@ const MainSection = () => {
         <div className={styles.scroll}>
           <Image src={Scroll} alt="Scroll Down" className={styles.scrollIcon} />
         </div>
-        <div className={styles.right} id="project">
+        <div className={styles.right} >
           <p>
             I’m a software Engineer with experience in working with both
             front-end and back-end Java script frameworks and libraries for
