@@ -26,11 +26,10 @@
     .left {
       display: flex;
       width: 95%;
-      align-items: stretch;
     }
     .oneProject {
       display: flex;
-      align-items: start;
+      align-items: center;
       justify-content: space-between;
       margin-bottom: 4rem;
       @include small-screen {
@@ -39,7 +38,7 @@
       .number {
         font-size: 3rem;
         margin-right: 1.5rem;
-        margin-top: 2rem;
+        // margin-top: 2rem;
         @include small-screen {
           font-size: 2rem;
           // margin-top: 2.5rem;
@@ -100,7 +99,6 @@
 
 .plus {
   cursor: pointer;
-  padding-top: 3rem;
   width: 7rem;
   height: 7rem;
   @include small-screen {

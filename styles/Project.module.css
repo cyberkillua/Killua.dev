@@ -23,11 +23,10 @@
 .container .projects .left {
   display: flex;
   width: 95%;
-  align-items: stretch;
 }
 .container .projects .oneProject {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
 }
@@ -39,7 +38,6 @@
 .container .projects .oneProject .number {
   font-size: 3rem;
   margin-right: 1.5rem;
-  margin-top: 2rem;
 }
 @media (max-width: 49em) {
   .container .projects .oneProject .number {
@@ -103,7 +101,6 @@
 
 .plus {
   cursor: pointer;
-  padding-top: 3rem;
   width: 7rem;
   height: 7rem;
 }
