@@ -8,14 +8,7 @@
 }
 @media (max-width: 49em) {
   .nav {
-    padding: 2rem 3rem;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 500;
-    top: 0;
-    overflow: hidden;
-    background-color: black;
-    height: 10vh;
+    padding: 7rem 3rem;
   }
 }
 .nav .navLinks {
@@ -29,11 +22,11 @@
   padding-left: 6rem;
   line-height: 22.97px;
 }
-.nav .navLinks a .music:hover {
-  stroke: #98fb4a;
-}
 .nav .navLinks a:hover {
   color: var(--green-color);
+}
+.nav .navLinks .music:hover {
+  stroke: #98fb4a;
 }
 @media (max-width: 49em) {
   .nav .navLinks {
@@ -49,4 +42,8 @@
     width: 30px;
     height: 30px;
   }
+}
+
+#music:hover {
+  stroke: #98fb4a;
 }/*# sourceMappingURL=Navbar.module.css.map */

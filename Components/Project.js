@@ -5,7 +5,25 @@ import plus from "../public/plus.svg";
 import minus from "../public/minus.svg";
 import { useState } from "react";
 
+import { useEffect } from "react";
+
+import { gsap } from "gsap";
+
 const Project = () => {
+  const cliked = () => {
+    gsap.timeline().fromTo(
+      "#about",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 2.5,
+        ease: "back.out(1.7)",
+      }
+    );
+  };
+
   const [open, setOpen] = useState(0);
 
   const data = [
@@ -47,39 +65,41 @@ const Project = () => {
       <div className={styles.projects}>
         {data.map((item) => {
           return (
-            <>
+            <div key={item.number}>
               <div className={styles.oneProject} key={item.number}>
                 <div className={styles.left}>
                   <div className={styles.number}>{item.number}</div>
                   <div className={styles.about}>
                     <p className={styles.name}>{item.name}</p>
-                    {open === item.number ? (
-                      <>
-                        <p className={styles.text}>{item.about}</p>
-                        <div className={styles.roles}>
-                          <p>
-                            Role:&nbsp; &nbsp;{" "}
-                            <span className={styles.green}>{item.role}</span>{" "}
-                          </p>
-                          <p>
-                            Link: &nbsp; &nbsp;
-                            <span className={styles.green}>
-                              <Link href={item.placeholderLink} replace>
-                                <a target="_blank" rel="noopener noreferrer">
-                                  {item.link}
-                                </a>
-                              </Link>
-                            </span>
-                          </p>
-                          <p>
-                            Date:&nbsp; &nbsp;{" "}
-                            <span className={styles.green}>{item.date}</span>{" "}
-                          </p>
-                        </div>
-                      </>
-                    ) : (
-                      ""
-                    )}
+                    <div id="about">
+                      {open === item.number ? (
+                        <>
+                          <p className={styles.text}>{item.about}</p>
+                          <div className={styles.roles}>
+                            <p>
+                              Role:&nbsp; &nbsp;{" "}
+                              <span className={styles.green}>{item.role}</span>{" "}
+                            </p>
+                            <p>
+                              Link: &nbsp; &nbsp;
+                              <span className={styles.green}>
+                                <Link href={item.placeholderLink} replace>
+                                  <a target="_blank" rel="noopener noreferrer">
+                                    {item.link}
+                                  </a>
+                                </Link>
+                              </span>
+                            </p>
+                            <p>
+                              Date:&nbsp; &nbsp;{" "}
+                              <span className={styles.green}>{item.date}</span>{" "}
+                            </p>
+                          </div>
+                        </>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                   </div>
                 </div>
                 {!(open === item.number) ? (
@@ -87,6 +107,7 @@ const Project = () => {
                     className={styles.plus}
                     onClick={() => {
                       setOpen(item.number);
+                      cliked();
                     }}
                   >
                     <Image src={plus} alt="Plus" />
@@ -108,7 +129,7 @@ const Project = () => {
                 )}
               </div>
               <div className={styles.border}></div>
-            </>
+            </div>
           );
         })}
       </div>

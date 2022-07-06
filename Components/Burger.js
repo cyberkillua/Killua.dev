@@ -4,9 +4,27 @@ import close from "../public/x.svg";
 import Music from "../public/music.svg";
 import styles from "../styles/Burger.module.css";
 import Link from "next/link";
+
+import { useEffect } from "react";
+
+import { gsap } from "gsap";
 const Burger = ({ setOpen }) => {
+  useEffect(() => {
+    gsap.timeline().fromTo(
+      "#burger",
+      {
+        y: -600,
+      },
+      {
+        y: 0,
+        duration: 2.5,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="burger">
       <div className={styles.top}>
         <Image src={Logo} alt="Killua Logo" />
         <Image

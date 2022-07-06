@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       {open && <Burger setOpen={setOpen} />}
-      <nav className={styles.nav} >
+      <nav className={styles.nav}>
         <div>
           <Link href="#home">
             <a>
@@ -31,7 +31,12 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={Music} alt="Music" className={styles.music} />
+            <Image
+              src={Music}
+              alt="Music"
+              className={styles.music}
+              id="music"
+            />
           </a>
         </div>
         <div className={styles.toggler}>
