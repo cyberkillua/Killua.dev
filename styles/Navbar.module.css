@@ -26,7 +26,7 @@
   color: var(--green-color);
 }
 .nav .navLinks .music:hover {
-  stroke: #98fb4a;
+  filter: invert(88%) sepia(69%) saturate(538%) hue-rotate(32deg) brightness(100%) contrast(97%);
 }
 @media (max-width: 49em) {
   .nav .navLinks {
@@ -42,8 +42,4 @@
     width: 30px;
     height: 30px;
   }
-}
-
-#music:hover {
-  stroke: #98fb4a;
 }/*# sourceMappingURL=Navbar.module.css.map */

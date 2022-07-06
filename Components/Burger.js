@@ -17,7 +17,7 @@ const Burger = ({ setOpen }) => {
       },
       {
         y: 0,
-        duration: 2.5,
+        duration: 1,
         ease: "power2.out",
       }
     );

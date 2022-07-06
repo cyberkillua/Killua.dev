@@ -112,4 +112,8 @@
   .link {
     padding: 1rem;
   }
+}
+
+.link:hover {
+  filter: invert(88%) sepia(69%) saturate(538%) hue-rotate(32deg) brightness(100%) contrast(97%);
 }/*# sourceMappingURL=Main.module.css.map */

@@ -60,7 +60,6 @@
         display: none;
         margin-top: 1rem;
       }
-      
     }
     .right {
       width: 40%;
@@ -96,4 +95,9 @@
   @include small-screen {
     padding: 1rem;
   }
+}
+
+.link:hover {
+  filter: invert(88%) sepia(69%) saturate(538%) hue-rotate(32deg)
+    brightness(100%) contrast(97%);
 }

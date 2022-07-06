@@ -13,13 +13,13 @@ const Project = () => {
       "#about",
       {
         opacity: 0,
-        x: -100,
+        scale: 0.3,
       },
       {
         opacity: 1,
-        x: 0,
-        duration: 2.5,
-        ease: "back.out(1.7)",
+        scale: 1,
+        duration: 1.5,
+        ease: "bounce.out",
       }
     );
   };

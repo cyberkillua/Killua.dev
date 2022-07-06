@@ -31,12 +31,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src={Music}
-              alt="Music"
-              className={styles.music}
-              id="music"
-            />
+            <Image src={Music} alt="Music" className={styles.music} />
           </a>
         </div>
         <div className={styles.toggler}>

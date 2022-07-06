@@ -50,7 +50,7 @@
           font-weight: 400;
           font-size: 9rem;
           display: flex;
-          align-items: start;
+          align-items: flex-start;
 
           @include small-screen {
             font-size: 5rem;

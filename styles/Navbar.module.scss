@@ -26,9 +26,9 @@
       color: var(--green-color);
     }
     .music:hover {
-      stroke: #98fb4a;
+      filter: invert(88%) sepia(69%) saturate(538%) hue-rotate(32deg)
+        brightness(100%) contrast(97%);
     }
-
 
     @include small-screen {
       display: none;
@@ -44,6 +44,4 @@
   }
 }
 
-#music:hover {
-  stroke: #98fb4a;
-}
+
