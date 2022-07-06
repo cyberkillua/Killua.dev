@@ -5,8 +5,6 @@ import plus from "../public/plus.svg";
 import minus from "../public/minus.svg";
 import { useState } from "react";
 
-import { useEffect } from "react";
-
 import { gsap } from "gsap";
 
 const Project = () => {
@@ -15,9 +13,11 @@ const Project = () => {
       "#about",
       {
         opacity: 0,
+        x: -100,
       },
       {
         opacity: 1,
+        x: 0,
         duration: 2.5,
         ease: "back.out(1.7)",
       }
