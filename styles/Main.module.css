@@ -4,7 +4,7 @@
 @media (max-width: 49em) {
   .main {
     padding: 1rem 5rem 1rem 5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     scroll-margin-top: 25rem;
   }
 }
