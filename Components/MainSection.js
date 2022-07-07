@@ -22,7 +22,7 @@ const MainSection = () => {
       })
       .to("#bigText", {
         text: "Back-end.",
-        duration: 3,
+        duration: 1.5,
         ease: "none",
         yoyo: true,
         repeat: 1,
@@ -30,7 +30,7 @@ const MainSection = () => {
       .to("#bigText", {
         delay: 0.1,
         text: "Front-end.",
-        duration: 3,
+        duration: 1.5,
         ease: "none",
         repeat: 1,
         yoyo: true,
