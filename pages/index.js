@@ -11,22 +11,33 @@ import gsap from "gsap";
 
 export default function Home() {
   useEffect(() => {
-    gsap.timeline().fromTo(
-      ".rest",
-      {
-        opacity: 0,
-        y: 400,
-      },
-      {
-        opacity: 1,
-        duration: 1,
-        y: 0,
-        ease: "power4.out",
-      }
-    );
+    gsap
+      .timeline()
+      .fromTo(
+        "#app",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .fromTo(
+        ".rest",
+        {
+          opacity: 0,
+          y: 400,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+          y: 0,
+          ease: "power4.out",
+        }
+      );
   }, []);
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="app">
       <Head>
         <title>Killua Dev</title>
         <meta name="description" content="Moshood Alimi Abiola Portfolio" />
