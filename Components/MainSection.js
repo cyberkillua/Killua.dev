@@ -14,9 +14,11 @@ gsap.registerPlugin(TextPlugin);
 
 const MainSection = () => {
   useEffect(() => {
+    
     gsap
       .timeline({
         repeat: -1,
+        delay: 1,
       })
       .to("#bigText", {
         text: "Back-end.",
@@ -66,10 +68,10 @@ const MainSection = () => {
         <div className={styles.scroll}>
           <Image src={Scroll} alt="Scroll Down" className={styles.scrollIcon} />
         </div>
-        <div className={styles.right} >
+        <div className={styles.right}>
           <p>
             I’m a software Engineer with experience in working with both
-            front-end and back-end Java script frameworks and libraries for
+            front-end and back-end JavaScript frameworks and libraries for
             personal projects, client-facing products, and teams with fast
             development cycles.
           </p>

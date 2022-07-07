@@ -36,6 +36,7 @@ const Project = () => {
       placeholderLink: "https://www.fezzant.com",
       role: "Backend",
       date: "2022",
+      
     },
     {
       number: "02",

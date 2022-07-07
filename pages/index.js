@@ -12,14 +12,15 @@ import gsap from "gsap";
 export default function Home() {
   useEffect(() => {
     gsap.timeline().fromTo(
-      "#sec",
+      ".rest",
       {
         opacity: 0,
-        // duration: 2,
+        y: 400,
       },
       {
         opacity: 1,
         duration: 1,
+        y: 0,
         ease: "power4.out",
       }
     );
@@ -32,11 +33,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className={styles.section} id="sec">
+      <main className={styles.section}>
         <Navbar />
-        <MainSection />
-        <Project />
-        <Books />
+        <div className="rest">
+          <MainSection />
+          <Project />
+          <Books />
+        </div>
       </main>
     </div>
   );

@@ -63,6 +63,10 @@
     display: none;
   }
 }
+.main .aboutMe .left .contact a {
+  text-decoration: none;
+  color: white;
+}
 .main .aboutMe .scroll {
   margin-top: 5rem;
 }
