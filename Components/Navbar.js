@@ -27,6 +27,13 @@ const Navbar = () => {
             <a>Contact</a>
           </Link>
           <a
+            href="https://medium.com/@moshood988"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
+          <a
             href="https://open.spotify.com/playlist/44cFKRRHkPrggaKRdFyoOr?si=5c4a31250c944ce8"
             target="_blank"
             rel="noopener noreferrer"

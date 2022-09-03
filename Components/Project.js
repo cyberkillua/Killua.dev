@@ -31,18 +31,17 @@ const Project = () => {
       number: "01",
       name: "Fezzant",
       about:
-        "Fezzant is a B2B product that helps protect businesses for cyber attacks by educating them on the dangers of cyber attacks and how to protect themselves.",
+        " Fezzant is a B2B product that helps protect businesses from cyber attacks by educating them on the dangers of cyber attacks and how to protect themselves.",
       link: "www.fezzant.com",
       placeholderLink: "https://www.fezzant.com",
       role: "Backend",
       date: "2022",
-      
     },
     {
       number: "02",
       name: "MaterialsPro",
       about:
-        "MaterialsPro are a B2B Construction Technology Platform facilitating seamless procurement of major categories of bulk Building & Construction materials by Customers, from our network of vetted and reliable Suppliers.",
+        "MaterialsPro is a B2B Construction Technology Platform facilitating seamless procurement of major categories of bulk Building & Construction materials by Customers, from our network of vetted and reliable Suppliers.",
       link: "www.materialspro.ng",
       placeholderLink: "https://www.materialspro.ng",
       role: "Backend",
@@ -52,7 +51,7 @@ const Project = () => {
       number: "03",
       name: "Benagos",
       about:
-        "Benagos is an e-commerce store builder for Nigerian businesses and online sellers to create an online store in few minutes providing a solution for ecommerce, payment and logistics.",
+        "Benagos is an e-commerce store builder for Nigerian businesses and online sellers to create an online store in a few minutes providing a solution for e-commerce, payment, and logistics.",
       link: "www.benagos.com",
       placeholderLink: "https://www.benagos.com",
       role: "Frontend",
