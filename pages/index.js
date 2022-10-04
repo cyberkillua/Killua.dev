@@ -17,9 +17,13 @@ export default function Home() {
         "#app",
         {
           autoAlpha: 0,
+          // opacity: 0,
         },
         {
           autoAlpha: 1,
+          // opacity: 1,
+          // duration: 1,
+          delay: 1,
         }
       )
       .fromTo(
