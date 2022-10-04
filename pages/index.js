@@ -17,28 +17,25 @@ export default function Home() {
         "#app",
         {
           autoAlpha: 0,
-          // opacity: 0,
         },
         {
           autoAlpha: 1,
-          // opacity: 1,
-          // duration: 1,
           delay: 1,
         }
       )
-      .fromTo(
-        ".rest",
-        {
-          opacity: 0,
-          y: 400,
-        },
-        {
-          opacity: 1,
-          duration: 1,
-          y: 0,
-          ease: "power4.out",
-        }
-      );
+      // .fromTo(
+      //   ".rest",
+      //   {
+      //     opacity: 0,
+      //     y: 400,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     duration: 1,
+      //     y: 0,
+      //     ease: "power4.out",
+      //   }
+      // );
   }, []);
   return (
     <div className={styles.container} id="app">
