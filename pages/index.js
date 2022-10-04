@@ -9,43 +9,29 @@ import { useEffect } from "react";
 
 import gsap from "gsap";
 
+const animate = () => {
+  const tl = gsap.timeline({ defaults: { opacity: 0 } });
+
+  tl.from(".section", {
+    autoAlpha: 1,
+  });
+};
+
 export default function Home() {
   useEffect(() => {
-    gsap
-      .timeline()
-      .fromTo(
-        "#app",
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-          // delay: 1,
-        }
-      )
-      // .fromTo(
-      //   ".rest",
-      //   {
-      //     opacity: 0,
-      //     y: 400,
-      //   },
-      //   {
-      //     opacity: 1,
-      //     duration: 1,
-      //     y: 0,
-      //     ease: "power4.out",
-      //   }
-      // );
+    window.addEventListener("load", function (event) {
+      animate();
+    });
   }, []);
   return (
-    <div className={styles.container} id="app">
+    <div className={styles.container}>
       <Head>
         <title>Killua Dev</title>
         <meta name="description" content="Moshood Alimi Abiola Portfolio" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className={styles.section}>
+      <main className="section">
         <Navbar />
         <div className="rest">
           <MainSection />
