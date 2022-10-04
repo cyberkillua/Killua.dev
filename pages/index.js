@@ -20,7 +20,7 @@ export default function Home() {
         },
         {
           autoAlpha: 1,
-          delay: 1,
+          // delay: 1,
         }
       )
       // .fromTo(
