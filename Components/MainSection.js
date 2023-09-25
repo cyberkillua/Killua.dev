@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "../styles/Main.module.css";
 import Image from "next/image";
 import Linkedin from "../public/linkedin.svg";
@@ -14,7 +15,6 @@ gsap.registerPlugin(TextPlugin);
 
 const MainSection = () => {
   useEffect(() => {
-    
     gsap
       .timeline({
         repeat: -1,
@@ -70,10 +70,9 @@ const MainSection = () => {
         </div>
         <div className={styles.right}>
           <p>
-            I’m a software Engineer with experience in working with both
-            front-end and back-end JavaScript frameworks and libraries for
-            personal projects, client-facing products, and teams with fast
-            development cycles.
+            I'm a software engineer experienced in both front-end and back-end
+            JavaScript. I've worked on a variety of projects, and lately, I've
+            been getting my hands dirty with smart contracts and the Web3 space.
           </p>
           <div className={styles.contact2}>
             <Link href="https://github.com/cyberkillua">

@@ -29,13 +29,13 @@ const Project = () => {
   const data = [
     {
       number: "01",
-      name: "Fezzant",
+      name: "GoDump",
       about:
-        " Fezzant is a B2B product that helps protect businesses from cyber attacks by educating them on the dangers of cyber attacks and how to protect themselves.",
-      link: "www.fezzant.com",
-      placeholderLink: "https://www.fezzant.com",
+        "Godump is a B2B dump truck rental marketplace, connecting dump truck Owners with dump truck Renters in one robust digital platform.",
+      link: "www.godump.co",
+      placeholderLink: "https://godump.co",
       role: "Backend",
-      date: "2022",
+      date: "2023",
     },
     {
       number: "02",
@@ -56,6 +56,16 @@ const Project = () => {
       placeholderLink: "https://www.benagos.com",
       role: "Frontend",
       date: "2022",
+    },
+    {
+      number: "04",
+      name: "Donate Contract",
+      about:
+        "this is a personal project i built in my quest to learn about smart contracts. This contract allows users to make coin donations,",
+      link: "www.donate.com",
+      placeholderLink: "https://marvelous-khapse-0c6ee0.netlify.app/",
+      role: "Fullstack",
+      date: "2023",
     },
   ];
   return (
