@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Writing', href: '#writing' },
-  { label: 'Contact', href: '#contact' },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Writing", href: "#writing" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -14,21 +14,21 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={`sticky top-0 z-50 bg-[#FAFAF9] border-b-2 border-[#0A0A0A] transition-shadow ${
-        scrolled ? 'shadow-[0_2px_0_#0A0A0A]' : ''
+        scrolled ? "shadow-[0_2px_0_#0A0A0A]" : ""
       }`}
     >
       <nav className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="font-bold text-lg tracking-tight">
           <span className="inline-block border-2 border-[#0A0A0A] bg-[#FACC15] px-2 py-0.5 shadow-[2px_2px_0_#0A0A0A] font-mono">
-            moshood.xyz
+            moshoodalimi.xyz
           </span>
         </a>
 
