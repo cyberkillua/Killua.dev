@@ -1,52 +1,19 @@
-:root {
-  --primary-color: #000000;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #d9d9d9;
-  --green-color: #98fb4a;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background-color: var(--primary-color);
-  background-image: url("../public/BackgroundWeb.svg");
-}
-@media (max-width: 49em) {
   body {
-    background-image: url("../public/mobile-background.svg");
-    background-size: cover;
+    background-color: #FAFAF9;
+    color: #0A0A0A;
+    font-family: 'Space Grotesk', sans-serif;
   }
-}
 
-body {
-  color: var(--primary-text-color);
-  line-height: 1.5;
-  font-size: 2rem;
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-@media (max-width: 64em) {
-  html {
-    font-size: 50%;
+  * {
+    box-sizing: border-box;
   }
 }
-@media (max-width: 49em) {
-  html {
-    font-size: 40%;
-  }
-}/*# sourceMappingURL=globals.css.map */

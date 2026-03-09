@@ -1,52 +1,79 @@
-import Logo from "../public/logo.svg";
-import Music from "../public/music.svg";
-import Menu from "../public/menu.svg";
-import Image from "next/image";
-import styles from "../styles/Navbar.module.css";
-import { useState } from "react";
-import Burger from "./Burger";
-import Link from "next/link";
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      {open && <Burger setOpen={setOpen} />}
-      <nav className={styles.nav}>
-        <div>
-          <Link href="#home">
-            <a>
-              <Image src={Logo} alt="Killua Logo" />
-            </a>
-          </Link>
-        </div>
-        <div className={styles.navLinks}>
-          <Link href="#project">
-            <a>Projects</a>
-          </Link>
-          <Link href="#contact">
-            <a>Contact</a>
-          </Link>
-          <a
-            href="https://medium.com/@moshood988"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Blog
-          </a>
-          <a
-            href="https://open.spotify.com/playlist/44cFKRRHkPrggaKRdFyoOr?si=5c4a31250c944ce8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src={Music} alt="Music" className={styles.music} />
-          </a>
-        </div>
-        <div className={styles.toggler}>
-          <Image src={Menu} alt="Menu" onClick={() => setOpen(!open)} />
-        </div>
-      </nav>
-    </>
-  );
-};
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
-export default Navbar;
+const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Writing', href: '#writing' },
+  { label: 'Contact', href: '#contact' },
+];
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`sticky top-0 z-50 bg-[#FAFAF9] border-b-2 border-[#0A0A0A] transition-shadow ${
+        scrolled ? 'shadow-[0_2px_0_#0A0A0A]' : ''
+      }`}
+    >
+      <nav className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+        {/* Logo */}
+        <a href="#" className="font-bold text-lg tracking-tight">
+          <span className="inline-block border-2 border-[#0A0A0A] bg-[#FACC15] px-2 py-0.5 shadow-[2px_2px_0_#0A0A0A] font-mono">
+            moshood.xyz
+          </span>
+        </a>
+
+        {/* Desktop nav */}
+        <ul className="hidden md:flex gap-8 items-center">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="text-sm font-medium hover:text-[#FACC15] transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile toggle */}
+        <button
+          className="md:hidden border-2 border-[#0A0A0A] p-1 shadow-[2px_2px_0_#0A0A0A] hover:bg-[#FACC15] transition-colors"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={18} /> : <Menu size={18} />}
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden border-t-2 border-[#0A0A0A] bg-[#FAFAF9]">
+          <ul className="flex flex-col px-4 py-4 gap-4">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm font-semibold block hover:text-[#FACC15] transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+}
