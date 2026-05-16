@@ -14,7 +14,7 @@ export default function Home() {
         <title>Moshood Alimi — AI Application Engineer</title>
         <meta
           name="description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products."
+          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
         />
         <meta
           name="keywords"
@@ -33,7 +33,7 @@ export default function Home() {
         <meta property="og:title" content="Moshood Alimi — AI Application Engineer" />
         <meta
           property="og:description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products."
+          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
         />
         <meta property="og:locale" content="en_US" />
 
@@ -42,7 +42,7 @@ export default function Home() {
         <meta name="twitter:title" content="Moshood Alimi — AI Application Engineer" />
         <meta
           name="twitter:description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products."
+          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
         />
 
         {/* JSON-LD structured data */}
@@ -56,7 +56,7 @@ export default function Home() {
               url: 'https://moshoodalimi.xyz',
               jobTitle: 'AI Application Engineer',
               description:
-                'AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products.',
+                'AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos.',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Lagos',

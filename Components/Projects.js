@@ -11,12 +11,21 @@ const projects = [
     badge: "Production App",
   },
   {
-    name: "Qdrant Knowledge Base",
+    name: "Finance Analyzer",
     description:
-      "Persistent semantic search system supporting markdown, PDFs, and URLs. Metadata filtering, dynamic vector dimensions, deployed with live URL.",
-    tags: ["Qdrant", "TypeScript", "Embeddings", "Vector DB"],
-    github: "https://github.com/cyberkillua/knowledge-base",
-    live: null,
+      "Full-stack personal finance platform for Nigerian bank statements. Upload statements from OPay, Kuda, UBA, Zenith, or GTBank — the system auto-detects the bank, extracts every transaction, and classifies it using a hybrid pipeline: a custom fine-tuned HuggingFace model handles common transactions, a Groq LLM covers ambiguous ones, and a second verification pass catches misclassifications. Dashboard shows spending breakdown, monthly cash flow, top recipients, income sources, and AI-generated monthly insights.",
+    tags: ["Python", "FastAPI", "React", "TypeScript", "HuggingFace", "Groq", "Supabase", "Recharts"],
+    github: null,
+    live: "https://finance-analyzer-six.vercel.app",
+    badge: "Production App",
+  },
+  {
+    name: "KnowBall",
+    description:
+      "Football scouting platform that rates players from raw match data across five position groups — strikers, wingers, CAMs, midfielders, and defenders. Each position has a config-driven rating engine scoring 7 dimensions, calibrated against 10,000+ match samples. Players are ranked against positional peers with league and cross-league comparisons. Includes role archetype classification, style profiling, and auto-generated scout report cards. Daily data pipeline pulls from Sofascore and Understat via GitHub Actions.",
+    tags: ["Python", "React 19", "TypeScript", "TanStack", "Supabase", "Postgres", "GitHub Actions"],
+    github: null,
+    live: "https://know-balls.vercel.app",
   },
   {
     name: "LangChain Football Tactical Agent",
@@ -27,19 +36,11 @@ const projects = [
     live: null,
   },
   {
-    name: "Hybrid Search System",
+    name: "Qdrant Knowledge Base",
     description:
-      "Combined BM25 keyword search and embedding-based semantic search using Reciprocal Rank Fusion. Benchmarked against single-method retrieval.",
-    tags: ["Python", "BM25", "Embeddings", "RAG"],
-    github: "https://github.com/cyberkillua/bm25-embeddings-rag-pdf",
-    live: null,
-  },
-  {
-    name: "MCP Server — Sofascore",
-    description:
-      "Custom Model Context Protocol server exposing Sofascore match data as a tool. Connects directly to Claude Desktop.",
-    tags: ["MCP", "TypeScript", "Claude"],
-    github: "https://github.com/cyberkillua/mcp-sofascore",
+      "Persistent semantic search system supporting markdown, PDFs, and URLs. Metadata filtering, dynamic vector dimensions, deployed with live URL.",
+    tags: ["Qdrant", "TypeScript", "Embeddings", "Vector DB"],
+    github: "https://github.com/cyberkillua/knowledge-base",
     live: null,
   },
 ];

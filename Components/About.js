@@ -23,17 +23,21 @@ export default function About() {
 
       <div className="max-w-2xl space-y-5 mb-10">
         <p className="text-base md:text-lg leading-relaxed text-[#333]">
-          I&apos;m a software engineer with a background in full-stack JavaScript
-          who transitioned into AI engineering. Over the past few months I&apos;ve
-          been systematically building AI systems from scratch — RAG pipelines,
-          vector databases, function-calling agents, MCP servers — learning by
-          shipping rather than studying.
+          I&apos;m a software engineer with a full-stack JavaScript background who
+          moved into AI engineering by building — RAG pipelines, vector databases,
+          agents, fine-tuned models, and data pipelines, all shipped to production.
         </p>
         <p className="text-base md:text-lg leading-relaxed text-[#333]">
-          I currently work on Blue AI, an EdTech platform that uses GPT-4o and OCR
-          to automate student script marking for teachers. I&apos;m interested in
-          remote opportunities where I can build AI-powered products that solve real
-          problems.
+          I contract with Blue AI, an EdTech platform using GPT-4o and OCR to
+          automate student script marking. I&apos;ve also independently shipped two
+          products: a personal finance analyzer for Nigerian bank statements with a
+          custom fine-tuned categorization model, and a football scouting platform
+          with a config-driven player rating engine calibrated on 10,000+ match
+          samples.
+        </p>
+        <p className="text-base md:text-lg leading-relaxed text-[#333]">
+          I&apos;m looking for remote AI engineering roles where I can keep building
+          things that work.
         </p>
       </div>
 
