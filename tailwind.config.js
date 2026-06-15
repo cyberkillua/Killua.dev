@@ -7,19 +7,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Space Grotesk', 'sans-serif'],
-        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+        disp: ['"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['Newsreader', 'Georgia', 'serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        accent: '#FACC15',
-        bg: '#FAFAF9',
-        ink: '#0A0A0A',
-        tag: '#F4F4F5',
-      },
-      boxShadow: {
-        neo: '4px 4px 0px #0A0A0A',
-        'neo-lg': '6px 6px 0px #0A0A0A',
-        'neo-sm': '2px 2px 0px #0A0A0A',
+        paper: '#FBF9F3',
+        ink: '#1a1814',
+        body: '#3a352c',
+        muted: '#6b6557',
+        rule: '#d8d2c4',
+        red: '#9a3a1d',
       },
     },
   },

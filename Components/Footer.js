@@ -1,8 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="border-t-2 border-[#0A0A0A] bg-[#0A0A0A] text-[#FAFAF9]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-5">
-        <p className="text-sm font-mono">Built by Moshood Alimi. © 2026.</p>
+    <footer>
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row gap-2 items-center justify-between font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
+        <span>Moshood Alimi · AI Application Engineer</span>
+        <span>Lagos · © 2026</span>
       </div>
     </footer>
   );

@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
+  { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
   { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" },
 ];
@@ -20,25 +20,24 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-[#FAFAF9] border-b-2 border-[#0A0A0A] transition-shadow ${
-        scrolled ? "shadow-[0_2px_0_#0A0A0A]" : ""
+      className={`sticky top-0 z-50 bg-paper border-b border-ink transition-shadow ${
+        scrolled ? "shadow-[0_1px_0_#1a1814]" : ""
       }`}
     >
-      <nav className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="font-bold text-lg tracking-tight">
-          <span className="inline-block border-2 border-[#0A0A0A] bg-[#FACC15] px-2 py-0.5 shadow-[2px_2px_0_#0A0A0A] font-mono">
-            moshoodalimi.xyz
-          </span>
+      <nav className="max-w-5xl mx-auto px-5 sm:px-8 h-12 flex items-center justify-between">
+        <a
+          href="#top"
+          className="font-disp text-base font-semibold tracking-tight"
+        >
+          Moshood Alimi
         </a>
 
-        {/* Desktop nav */}
-        <ul className="hidden md:flex gap-8 items-center">
+        <ul className="hidden md:flex gap-7 items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium hover:text-[#FACC15] transition-colors"
+                className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted hover:text-red transition-colors"
               >
                 {link.label}
               </a>
@@ -46,25 +45,23 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
         <button
-          className="md:hidden border-2 border-[#0A0A0A] p-1 shadow-[2px_2px_0_#0A0A0A] hover:bg-[#FACC15] transition-colors"
+          className="md:hidden border border-ink p-1 hover:bg-ink hover:text-paper transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={18} /> : <Menu size={18} />}
+          {menuOpen ? <X size={16} /> : <Menu size={16} />}
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t-2 border-[#0A0A0A] bg-[#FAFAF9]">
-          <ul className="flex flex-col px-4 py-4 gap-4">
+        <div className="md:hidden border-t border-ink bg-paper">
+          <ul className="flex flex-col px-5 py-4 gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-semibold block hover:text-[#FACC15] transition-colors"
+                  className="font-mono text-xs uppercase tracking-[0.12em] block hover:text-red transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

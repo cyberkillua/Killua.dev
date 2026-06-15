@@ -14,7 +14,7 @@ export default function Home() {
         <title>Moshood Alimi — AI Application Engineer</title>
         <meta
           name="description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
+          content="AI Application Engineer in Lagos, Nigeria. I ship production AI — BlueAI (AI assessment marking), QudiMapper (Nigerian bank-statement intelligence), and Know Ball (football scouting engines)."
         />
         <meta
           name="keywords"
@@ -25,6 +25,7 @@ export default function Home() {
         <link rel="canonical" href="https://moshoodalimi.xyz" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#FBF9F3" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
@@ -33,7 +34,7 @@ export default function Home() {
         <meta property="og:title" content="Moshood Alimi — AI Application Engineer" />
         <meta
           property="og:description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
+          content="AI Application Engineer in Lagos, Nigeria. I ship production AI — BlueAI (AI assessment marking), QudiMapper (Nigerian bank-statement intelligence), and Know Ball (football scouting engines)."
         />
         <meta property="og:locale" content="en_US" />
 
@@ -42,7 +43,7 @@ export default function Home() {
         <meta name="twitter:title" content="Moshood Alimi — AI Application Engineer" />
         <meta
           name="twitter:description"
-          content="AI Application Engineer based in Lagos, Nigeria. Building RAG systems, agents, and LLM-powered products. Shipping production AI in Lagos."
+          content="AI Application Engineer in Lagos, Nigeria. I ship production AI — BlueAI (AI assessment marking), QudiMapper (Nigerian bank-statement intelligence), and Know Ball (football scouting engines)."
         />
 
         {/* JSON-LD structured data */}
@@ -86,12 +87,12 @@ export default function Home() {
         />
       </Head>
 
-      <div className="min-h-screen bg-[#FAFAF9] text-[#0A0A0A]">
+      <div className="min-h-screen bg-paper text-ink">
         <Navbar />
         <main>
           <Hero />
-          <About />
           <Projects />
+          <About />
           <Writing />
           <Contact />
         </main>

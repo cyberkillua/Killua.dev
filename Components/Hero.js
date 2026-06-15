@@ -1,76 +1,83 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-32">
-      <div className="max-w-2xl">
-        <p className="font-mono text-sm text-[#666] mb-5 tracking-wide">
-          Based in Lagos, Nigeria
-        </p>
+    <section id="top">
+      {/* Dateline */}
+      <div className="border-b border-ink">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-2.5 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
+          <span>Lagos, Nigeria</span>
+          <span className="hidden sm:inline">Remote &amp; Available</span>
+        </div>
+      </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6">
-          Moshood
-          <br />
-          Alimi
-        </h1>
-
-        <div className="inline-block border-2 border-[#0A0A0A] bg-[#FACC15] px-3 py-1 font-mono text-sm font-semibold shadow-[3px_3px_0_#0A0A0A] mb-8">
+      {/* Masthead */}
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 text-center pt-12 pb-10 md:pt-16 md:pb-12">
+        <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-red mb-4">
           AI Application Engineer
-        </div>
-
-        <p className="text-xl md:text-2xl font-semibold mb-4 leading-tight">
-          I build production AI systems that solve real problems.
         </p>
-
-        <p className="text-base md:text-lg text-[#555] mb-10 leading-relaxed">
-          I work at the intersection of software engineering and AI — building RAG
-          systems, agents, and LLM-powered products that ship.
+        <h1 className="font-disp font-semibold tracking-tight leading-[0.92] text-5xl sm:text-6xl md:text-7xl">
+          Moshood Alimi
+        </h1>
+        <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted mt-5">
+          Builder &nbsp;·&nbsp; Writer &nbsp;·&nbsp; Shipping Production AI
         </p>
+      </div>
 
-        {/* CTAs */}
-        <div className="flex flex-wrap gap-3 mb-10">
-          <a
-            href="#projects"
-            className="border-2 border-[#0A0A0A] bg-[#FACC15] px-6 py-2.5 font-bold text-sm shadow-[4px_4px_0_#0A0A0A] hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-x-px hover:-translate-y-px transition-all"
-          >
-            View Projects
-          </a>
-          <a
-            href="#writing"
-            className="border-2 border-[#0A0A0A] bg-white px-6 py-2.5 font-bold text-sm shadow-[4px_4px_0_#0A0A0A] hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-x-px hover:-translate-y-px transition-all"
-          >
-            Read my writing
-          </a>
-        </div>
+      {/* Statement band */}
+      <div className="border-y border-ink">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-14 md:py-20 text-center">
+          <p className="font-disp font-medium text-2xl sm:text-3xl md:text-4xl leading-[1.12] tracking-tight max-w-2xl mx-auto mb-6">
+            AI engineer. I build things that work.
+          </p>
+          <p className="font-serif text-base md:text-lg leading-relaxed text-body max-w-xl mx-auto">
+            Full-stack background. Python and TypeScript. Currently shipping a
+            finance platform and a football analytics engine from Lagos.
+          </p>
 
-        {/* Social links */}
-        <div className="flex items-center gap-5">
-          <a
-            href="https://github.com/cyberkillua"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[#FACC15] transition-colors"
-            aria-label="GitHub"
-          >
-            <Github size={20} />
-          </a>
-          <a
-            href="https://linkedin.com/in/moshood-alimi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[#FACC15] transition-colors"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="https://substack.com/@moshoodalimi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-sm border-b-2 border-[#0A0A0A] hover:text-[#FACC15] hover:border-[#FACC15] transition-colors pb-0.5"
-          >
-            Substack ↗
-          </a>
+          <div className="mt-9 flex flex-wrap gap-x-7 gap-y-3 justify-center font-mono text-[11px] uppercase tracking-[0.08em]">
+            <a
+              href="#work"
+              className="text-red border-b-[1.5px] border-red pb-0.5 hover:opacity-70 transition-opacity"
+            >
+              View the work →
+            </a>
+            <a
+              href="#contact"
+              className="border-b-[1.5px] border-ink pb-0.5 hover:text-red hover:border-red transition-colors"
+            >
+              Get in touch →
+            </a>
+          </div>
+
+          <div className="mt-8 flex items-center gap-5 justify-center text-muted">
+            <a
+              href="https://github.com/cyberkillua"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red transition-colors"
+              aria-label="GitHub"
+            >
+              <Github size={18} />
+            </a>
+            <a
+              href="https://linkedin.com/in/moshood-alimi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={18} />
+            </a>
+            <a
+              href="https://killy7.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[11px] uppercase tracking-[0.08em] hover:text-red transition-colors"
+            >
+              Substack ↗
+            </a>
+          </div>
         </div>
       </div>
     </section>

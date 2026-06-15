@@ -8,12 +8,24 @@
   }
 
   body {
-    background-color: #FAFAF9;
-    color: #0A0A0A;
-    font-family: 'Space Grotesk', sans-serif;
+    background-color: #FBF9F3;
+    color: #1a1814;
+    font-family: 'Newsreader', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: #9a3a1d;
+    color: #FBF9F3;
   }
 
   * {
     box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .label {
+    @apply font-mono uppercase tracking-[0.2em] text-muted;
   }
 }
