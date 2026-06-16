@@ -27,18 +27,21 @@ export default function About() {
               <span className="font-disp float-left text-6xl leading-[0.7] pr-3 pt-1 font-medium">
                 I
               </span>
-              &apos;m a software engineer with a full-stack JavaScript background
-              who moved into AI engineering by building — RAG pipelines, vector
-              databases, agents, fine-tuned models, and data pipelines, all
-              shipped to production.
+              &apos;m a software engineer with a full-stack JavaScript
+              background who moved into AI engineering by building — RAG
+              pipelines, vector databases, agents, fine-tuned models, and data
+              pipelines, all shipped to production.
             </p>
             <p className="font-serif text-base md:text-lg leading-relaxed text-body">
-              I contract with BlueAI, an EdTech platform using GPT-4o, OCR, and
-              vision to automate student assessment marking. I&apos;ve also independently
-              shipped a personal finance analyzer for Nigerian bank statements
-              with a custom fine-tuned categorization model, and a football
-              scouting platform with six config-driven, versioned rating engines
-              that evaluate players and teams from raw match event data.
+              Over the past six months I&apos;ve shipped two products: a
+              personal finance platform that tracks your money across multiple
+              Nigerian banks — parses your statements, categorizes every
+              transaction, and shows you where it&apos;s actually going. And a
+              football analytics platform that breaks down what players actually
+              do on the pitch — not just good or bad, but profiles and
+              functions, so you can see how a striker who scores 25 goals from
+              three square metres is fundamentally different from one who drops
+              deep and creates for everyone else.
             </p>
             <p className="font-serif text-base md:text-lg leading-relaxed text-body">
               I&apos;m looking for remote AI engineering roles where I can keep
@@ -52,10 +55,7 @@ export default function About() {
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-2">
               {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="font-mono text-xs text-body"
-                >
+                <span key={skill} className="font-mono text-xs text-body">
                   {skill}
                 </span>
               ))}
