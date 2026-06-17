@@ -13,7 +13,16 @@ const projects = [
       { value: "50+", label: "Migrations" },
       { value: "Daily", label: "Pipeline" },
     ],
-    tags: ["Python", "React 19", "TanStack Start", "Tailwind v4", "Recharts", "Supabase", "Postgres", "PWA"],
+    tags: [
+      "Python",
+      "React 19",
+      "TanStack Start",
+      "Tailwind v4",
+      "Recharts",
+      "Supabase",
+      "Postgres",
+      "PWA",
+    ],
     github: null,
     live: "https://know-balls.vercel.app",
   },
@@ -28,7 +37,15 @@ const projects = [
       { value: "Fine-tuned", label: "Classifier" },
       { value: "Containerized", label: "Inference API" },
     ],
-    tags: ["FastAPI", "SQLAlchemy", "React", "TypeScript", "Tailwind", "Recharts", "HuggingFace"],
+    tags: [
+      "FastAPI",
+      "SQLAlchemy",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Recharts",
+      "HuggingFace",
+    ],
     github: null,
     live: "https://finance-analyzer-six.vercel.app",
   },
@@ -37,15 +54,48 @@ const projects = [
     status: "Production · EdTech",
     statusAccent: true,
     description:
-      "Full-stack educational assessment platform where teachers create assessments and student work is marked automatically by AI. Teachers generate questions with mark schemes, launch timed assessments via join codes, and control feedback release; students work in a locked-down exam environment and receive detailed feedback. The marking pipeline is the heart of the product — well beyond keyword matching: OCR and vision-based extraction for handwritten answers, mathematical-equivalence checking, step-by-step working analysis, and quality scoring that produces structured \"What Went Well / Next Steps\" feedback teachers can trust. Also handles past-paper extraction, class analytics, subscription tiering, an admin panel, and GDPR data requests. The core challenge was making AI marking trustworthy and fair — grading free-form and handwritten responses accurately, treating mathematically equivalent answers as correct however they're written, and keeping teachers in the loop.",
+      'Full-stack educational assessment platform where teachers create assessments and student work is marked automatically by AI. Teachers generate questions with mark schemes, launch timed assessments via join codes, and control feedback release; students work in a locked-down exam environment and receive detailed feedback. The marking pipeline is the heart of the product — well beyond keyword matching: OCR and vision-based extraction for handwritten answers, mathematical-equivalence checking, step-by-step working analysis, and quality scoring that produces structured "What Went Well / Next Steps" feedback teachers can trust. Also handles past-paper extraction, class analytics, subscription tiering, an admin panel, and GDPR data requests. The core challenge was making AI marking trustworthy and fair — grading free-form and handwritten responses accurately, treating mathematically equivalent answers as correct however they\'re written, and keeping teachers in the loop.',
     metrics: [
       { value: "GPT-4o", label: "Marking + Gen" },
       { value: "OCR + Vision", label: "Handwriting" },
       { value: "Math-aware", label: "Grading" },
     ],
-    tags: ["FastAPI", "MongoDB", "GPT-4o", "React 19", "Radix UI", "MathLive", "KaTeX", "Recharts"],
+    tags: [
+      "FastAPI",
+      "MongoDB",
+      "GPT-4o",
+      "React 19",
+      "Radix UI",
+      "MathLive",
+      "KaTeX",
+      "Recharts",
+    ],
     github: null,
     live: "https://www.blueai.education/",
+  },
+  {
+    name: "Ops Intelligence Platform",
+    status: "Production · Security Intelligence",
+    statusAccent: true,
+    description:
+      "Full-stack situational-awareness platform that aggregates, verifies, and maps real-world security incidents and live field assets onto a single operations dashboard — turning noisy, scattered open-source signals into a clean, geolocated, real-time picture for decision-making. Multi-source ingestion pulls from news APIs, RSS, humanitarian datasets, and a real-time messaging listener, normalizing wildly different formats into one event model. An LLM pipeline filters thousands of raw items down to genuine, recent incidents: a cheap pre-filter, a date-aware classifier that rejects stale events, and a second-pass verification model to cut false positives before anything reaches the map. Free-text locations are auto-geocoded into precise markers, while a telemetry listener ingests live position data from field devices over TCP/UDP — decoding GPS, heading, and status — and renders moving assets on the same map. Multi-tenant with authentication and role-based access. The whole AI pipeline runs entirely on free-tier infrastructure: multiple quota buckets, pre-filtering, and fingerprint-based deduplication keep inference cost at zero while still doing two-stage verification. It unifies two very different real-time domains — classified text events and binary telemetry streams — into one coherent geospatial product.",
+    metrics: [
+      { value: "$0", label: "Inference Cost" },
+      { value: "2-stage", label: "LLM Verification" },
+      { value: "TCP/UDP", label: "Live Telemetry" },
+    ],
+    tags: [
+      "TypeScript",
+      "Bun",
+      "Hono",
+      "PostgreSQL",
+      "LangGraph",
+      "React",
+      "TanStack",
+      "Leaflet",
+    ],
+    github: null,
+    live: null,
   },
   {
     name: "Tactical Agent",
@@ -151,7 +201,10 @@ function ProjectEntry({ project }) {
 
 export default function Projects() {
   return (
-    <section id="work" className="max-w-5xl mx-auto px-5 sm:px-8 py-16 md:py-24">
+    <section
+      id="work"
+      className="max-w-5xl mx-auto px-5 sm:px-8 py-16 md:py-24"
+    >
       <div className="flex items-baseline justify-between mb-2">
         <h2 className="font-mono text-[11px] uppercase tracking-[0.25em] text-muted">
           Selected Work
