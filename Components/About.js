@@ -36,7 +36,7 @@ export default function About() {
               Over the past six months I&apos;ve shipped two products: a
               personal finance platform that tracks your money across multiple
               Nigerian banks — parses your statements, categorizes every
-              transaction, and shows you where it&apos;s actually going. And a
+              transaction, and shows you where your money goes. And a
               football analytics platform that breaks down what players actually
               do on the pitch — not just good or bad, but profiles and
               functions, so you can see how a striker who scores 25 goals from

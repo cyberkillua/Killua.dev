@@ -7,12 +7,7 @@ const projects = [
     status: "Live · Scouting Engine",
     statusAccent: true,
     description:
-      "Football scouting and decision-support platform that turns raw match event data (Sofascore, Understat) into objective player and team evaluations — rating players on the skills that define their position and ranking them against their true positional peers, so it can answer whether a winger is genuinely elite or just flattered by a good team. At its core are six position-specific rating engines, each config-driven (tuned through JSON) and versioned so the methodology keeps improving while older outputs stay comparable. A percentile system contextualizes every player against their league or all leagues, with role-archetype detection for style, not just quality. Extended from players to teams: style fingerprints by phase of play, position-by-position squad quality maps, and evidence-backed tendencies inferred from the underlying stats. A monorepo with a daily Python pipeline on GitHub Actions, a Supabase/Postgres backend with materialized views and 50+ versioned migrations, and an installable PWA — favoring honest uncertainty (ranges, confidence bands) over false precision.",
-    metrics: [
-      { value: "6", label: "Rating Engines" },
-      { value: "50+", label: "Migrations" },
-      { value: "Daily", label: "Pipeline" },
-    ],
+      "I built this to answer a question stats sites can't: is a winger genuinely elite, or just flattered by a good team? It pulls raw match event data from Sofascore and Understat and rates players with six position-specific engines, each tuned through JSON configs and versioned so the methodology can improve without breaking older outputs. Percentiles put every player in context against their league, archetype detection captures style rather than just quality, and the same machinery extends to teams — style fingerprints by phase of play, position-by-position squad quality maps. A daily Python pipeline on GitHub Actions feeds a Supabase/Postgres backend with 50+ versioned migrations, and the whole thing ships as an installable PWA. Where the data is thin, it shows ranges and confidence bands instead of pretending to precision.",
     tags: [
       "Python",
       "React 19",
@@ -31,12 +26,7 @@ const projects = [
     status: "Live · Fintech",
     statusAccent: true,
     description:
-      "Full-stack personal-finance app for Nigerian bank statements — OPay, Kuda, UBA, Zenith, GTBank — across Excel and PDF, including password-protected files. Its core is a hybrid categorization pipeline balancing accuracy against cost: transactions flow through user rules, own-transfer detection, deterministic keyword rules, and a custom classifier I fine-tuned on labeled Nigerian transaction data, with only ambiguous cases reaching an LLM verification pass. I owned the ML-ops end to end — training, evaluation, and serving the model from a dedicated containerized inference API to fit real memory constraints. Turns raw statements into spending analytics, budgets, savings pots, and AI-written monthly insights.",
-    metrics: [
-      { value: "5", label: "Banks" },
-      { value: "Fine-tuned", label: "Classifier" },
-      { value: "Containerized", label: "Inference API" },
-    ],
+      "Personal-finance app that reads Nigerian bank statements — OPay, Kuda, UBA, Zenith, GTBank, in Excel or PDF, password-protected or not — and turns them into spending analytics, budgets, savings pots, and monthly insights. The hard problem was categorizing transactions accurately without burning money on LLM calls, so categorization runs as a pipeline: user rules first, then own-transfer detection, then keyword rules, then a classifier I fine-tuned on labeled Nigerian transaction data. Only the ambiguous leftovers reach an LLM. I trained, evaluated, and deployed the classifier myself, serving it from a containerized inference API sized to fit real memory constraints.",
     tags: [
       "FastAPI",
       "SQLAlchemy",
@@ -54,12 +44,7 @@ const projects = [
     status: "Production · EdTech",
     statusAccent: true,
     description:
-      'Full-stack educational assessment platform where teachers create assessments and student work is marked automatically by AI. Teachers generate questions with mark schemes, launch timed assessments via join codes, and control feedback release; students work in a locked-down exam environment and receive detailed feedback. The marking pipeline is the heart of the product — well beyond keyword matching: OCR and vision-based extraction for handwritten answers, mathematical-equivalence checking, step-by-step working analysis, and quality scoring that produces structured "What Went Well / Next Steps" feedback teachers can trust. Also handles past-paper extraction, class analytics, subscription tiering, an admin panel, and GDPR data requests. The core challenge was making AI marking trustworthy and fair — grading free-form and handwritten responses accurately, treating mathematically equivalent answers as correct however they\'re written, and keeping teachers in the loop.',
-    metrics: [
-      { value: "GPT-4o", label: "Marking + Gen" },
-      { value: "OCR + Vision", label: "Handwriting" },
-      { value: "Math-aware", label: "Grading" },
-    ],
+      'Educational assessment platform where teachers create assessments and AI marks the student work. Teachers generate questions with mark schemes, launch timed assessments via join codes, and decide when feedback goes out; students sit the assessment in a locked-down exam environment. Most of the work went into making the marking trustworthy: OCR and vision models read handwritten answers, an equivalence checker accepts mathematically identical answers however they\'re written, and the grader analyzes step-by-step working to produce structured "What Went Well / Next Steps" feedback. Around that sits past-paper extraction, class analytics, subscription tiers, an admin panel, and GDPR data requests.',
     tags: [
       "FastAPI",
       "MongoDB",
@@ -78,12 +63,7 @@ const projects = [
     status: "Production · Security Intelligence",
     statusAccent: true,
     description:
-      "Full-stack situational-awareness platform that aggregates, verifies, and maps real-world security incidents and live field assets onto a single operations dashboard — turning noisy, scattered open-source signals into a clean, geolocated, real-time picture for decision-making. Multi-source ingestion pulls from news APIs, RSS, humanitarian datasets, and a real-time messaging listener, normalizing wildly different formats into one event model. An LLM pipeline filters thousands of raw items down to genuine, recent incidents: a cheap pre-filter, a date-aware classifier that rejects stale events, and a second-pass verification model to cut false positives before anything reaches the map. Free-text locations are auto-geocoded into precise markers, while a telemetry listener ingests live position data from field devices over TCP/UDP — decoding GPS, heading, and status — and renders moving assets on the same map. Multi-tenant with authentication and role-based access. The whole AI pipeline runs entirely on free-tier infrastructure: multiple quota buckets, pre-filtering, and fingerprint-based deduplication keep inference cost at zero while still doing two-stage verification. It unifies two very different real-time domains — classified text events and binary telemetry streams — into one coherent geospatial product.",
-    metrics: [
-      { value: "$0", label: "Inference Cost" },
-      { value: "2-stage", label: "LLM Verification" },
-      { value: "TCP/UDP", label: "Live Telemetry" },
-    ],
+      "Situational-awareness dashboard that puts verified security incidents and live field assets on one map. It ingests news APIs, RSS feeds, humanitarian datasets, and a real-time messaging listener, normalizes everything into a single event model, then runs an LLM pipeline to separate genuine recent incidents from noise — a cheap pre-filter, a date-aware classifier that rejects stale events, and a second verification pass before anything reaches the map. Free-text locations get geocoded into markers, and a telemetry listener decodes GPS, heading, and status from field devices over TCP/UDP, so moving assets render on the same map as the incidents. Multi-tenant with role-based access, and the whole AI pipeline runs on free-tier infrastructure — quota buckets, pre-filtering, and fingerprint deduplication keep inference cost at zero.",
     tags: [
       "TypeScript",
       "Bun",
@@ -168,21 +148,6 @@ function ProjectEntry({ project }) {
         >
           {expanded ? "Read less ↑" : "Read more ↓"}
         </button>
-      )}
-
-      {project.metrics && (
-        <div className="flex flex-wrap gap-6 mb-4">
-          {project.metrics.map((m) => (
-            <div key={m.label}>
-              <div className="font-disp text-lg font-medium leading-none">
-                {m.value}
-              </div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-muted mt-1">
-                {m.label}
-              </div>
-            </div>
-          ))}
-        </div>
       )}
 
       <div className="flex flex-wrap gap-x-3 gap-y-1">
